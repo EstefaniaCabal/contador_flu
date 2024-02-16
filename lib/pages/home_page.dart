@@ -72,14 +72,14 @@ class _HomePageState extends State<HomePage> {
   _restar() {
     setState(() {
       if(cont > 0){
-        cont -1;
+        cont -=1;
       }
     });
   }
   
   _restablecer() {
     setState(() {
-      cont == 0;
+      cont = 0;
     });
   }
 }
