@@ -1,4 +1,5 @@
-import 'package:contador_flu/pages/home_page.dart';
+//import 'package:contador_flu/pages/home_page.dart';
+import 'package:contador_flu/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -10,7 +11,7 @@ void main() => runApp(const MyApp());
     Widget build(BuildContext context) {
       return const MaterialApp(
         title: 'Material App',
-        home: HomePage(),
+        home: LoginPage(),
       );
     }
 } 
