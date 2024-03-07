@@ -1,32 +1,40 @@
+import 'package:contador_flu/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
-class ResetPage extends StatelessWidget {
-  const ResetPage({super.key});
+class RecordarPassword extends StatefulWidget {
+  const RecordarPassword({super.key});
 
+  @override
+  State<RecordarPassword> createState() => _RecordarPasswordState();
+}
+
+class _RecordarPasswordState extends State<RecordarPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 69, 100, 125),
-        elevation: 0,
-        title: const Text(
-          'Recuperación',
-          style: TextStyle(color: Colors.white), 
+        title: const Text('Recupera tu password'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
       ),
-      body: Container(
-        color: Colors.white,
-        child: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Página de recuperación de contraseña',
-                style: TextStyle(fontSize: 31),
+      body: const Stack(
+        children: [
+          Fondo(),
+          Center(
+            child: Text(
+              'Recupera tu password',
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
               ),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

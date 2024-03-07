@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481297683382",
+    "project_id": "flutterex-a2169",
+    "storage_bucket": "flutterex-a2169.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481297683382:android:68918539814448a83e6717",
+        "android_client_info": {
+          "package_name": "com.example.contador_flu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQAqU44-GTmgJ7IcMOfNtA9eYbu0-WWFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
